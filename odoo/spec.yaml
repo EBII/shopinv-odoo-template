@@ -5,3 +5,7 @@ odoo:
 server-tools:
     modules: [disable_odoo_online]
     src: https://github.com/OCA/server-tools 10.0
+
+odoo-usability:
+    modules: []
+    src: https://github.com/akretion/odoo-usability.git 10.0

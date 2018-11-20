@@ -18,7 +18,7 @@ services:
     environment:
       - POSTGRES_USER=odoo
       - POSTGRES_DB=db
-    image: camptocamp/postgres:10
+    image: camptocamp/postgres:10.0
     volumes:
       - .db/:/var/lib/postgresql/data
   odoo:
@@ -34,7 +34,7 @@ services:
       - VIRTUAL_HOST=docky-template.dy
       - VIRTUAL_PORT=8069
       - WORKERS=0
-      - ADDONS_PATH=/odoo/src/odoo/addons,/odoo/src/addons,/odoo/links,/odoo/local-src
+      - ADDONS_PATH=/odoo/src/odoo/addons,/odoo/src/addons,/odoo/links,/odoo/local-src,/odoo/external-src
     links:
       - db
       - pgadmin
