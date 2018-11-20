@@ -1,5 +1,5 @@
 # https://hub.docker.com/r/camptocamp/odoo-project
-FROM camptocamp/odoo-project:10.0-latest
+FROM camptocamp/odoo-project:10.0-3.0.0-batteries
 COPY . /odoo
 COPY templates /templates
 RUN apt-get update \

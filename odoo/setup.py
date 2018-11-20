@@ -6,13 +6,13 @@ with open('VERSION') as fd:
     version = fd.read().strip()
 
 setup(
-    name="my-project-name",
+    name="docky-template",
     version=version,
     description="project description",
     license='GNU Affero General Public License v3 or later (AGPLv3+)',
-    author="Author...",
-    author_email="email...",
-    url="url...",
+    author="Akretion & MonsieurB",
+    author_email="monsieurb@saaslys.com",
+    url="htpps://www.ebii.fr",
     packages=['songs'] + ['songs.%s' % p for p in find_packages('./songs')],
     include_package_data=True,
     classifiers=[

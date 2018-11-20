@@ -7,7 +7,7 @@
 
 external-src/
 src/
-links/
-
+links
+.db/*
 ./repo.yaml
 ./pip-selfcheck.json

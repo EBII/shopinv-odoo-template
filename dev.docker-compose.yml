@@ -5,7 +5,7 @@ networks:
 services:
   adminer:
     environment:
-      - VIRTUAL_HOST=adminer.docky-odoo-template.dy
+      - VIRTUAL_HOST=adminer.docky-template.dy
       - VIRTUAL_PORT=8080
     image: adminer
     links:
@@ -13,12 +13,12 @@ services:
     networks:
       default:
         aliases:
-          - adminer.docky-odoo-template.dy
+          - adminer.docky-template.dy
   db:
     environment:
       - POSTGRES_USER=odoo
       - POSTGRES_DB=db
-    image: quay.io/akretion/postgresql:10
+    image: camptocamp/postgres:10
     volumes:
       - .db/:/var/lib/postgresql/data
   odoo:
@@ -31,7 +31,7 @@ services:
       - DB_NAME=db
       - RUNNING_ENV=dev
       - MARABUNTA_MODE=demo
-      - VIRTUAL_HOST=docky-odoo-template.dy
+      - VIRTUAL_HOST=docky-template.dy
       - VIRTUAL_PORT=8069
       - WORKERS=0
       - ADDONS_PATH=/odoo/src/odoo/addons,/odoo/src/addons,/odoo/links,/odoo/local-src
@@ -42,12 +42,12 @@ services:
     networks:
       default:
         aliases:
-          - docky-odoo-template.dy
+          - docky-template.dy
     volumes:
       - ./odoo:/odoo
   pgadmin:
     environment:
-      - VIRTUAL_HOST=pgadmin.docky-odoo-template.dy
+      - VIRTUAL_HOST=pgadmin.docky-template.dy
       - VIRTUAL_PORT=5050
     image: fenglc/pgadmin4
     links:
@@ -55,5 +55,5 @@ services:
     networks:
       default:
         aliases:
-          - pgadmin.docky-odoo-template.dy
+          - pgadmin.docky-template.dy
 version: '3'
