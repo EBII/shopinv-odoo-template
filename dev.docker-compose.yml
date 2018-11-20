@@ -34,7 +34,7 @@ services:
       - VIRTUAL_HOST=docky-template.dy
       - VIRTUAL_PORT=8069
       - WORKERS=0
-      - ADDONS_PATH=/odoo/src/odoo/addons,/odoo/src/addons,/odoo/links,/odoo/local-src,/odoo/external-src
+      - ADDONS_PATH=/odoo/src/odoo/addons,/odoo/src/addons,/odoo/local-src,/odoo/external-src
     links:
       - db
       - pgadmin
