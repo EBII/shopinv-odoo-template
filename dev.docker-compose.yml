@@ -3,17 +3,6 @@ networks:
     external:
       name: dy
 services:
-  adminer:
-    environment:
-      - VIRTUAL_HOST=adminer.docky-template.dy
-      - VIRTUAL_PORT=8080
-    image: adminer
-    links:
-      - db
-    networks:
-      default:
-        aliases:
-          - adminer.docky-template.dy
   db:
     environment:
       - POSTGRES_USER=odoo
@@ -31,23 +20,25 @@ services:
       - DB_NAME=db
       - RUNNING_ENV=dev
       - MARABUNTA_MODE=demo
-      - VIRTUAL_HOST=docky-template.dy
+      - VIRTUAL_HOST=ebii.dy
       - VIRTUAL_PORT=8069
-      - WORKERS=0
-      - ADDONS_PATH=/odoo/src/odoo/addons,/odoo/src/addons,/odoo/local-src,/odoo/external-src
+      - WORKERS=4
+      - SERVER_WIDE_MODULES=web,web_kanban,queue_job
+      - ADDONS_PATH=/odoo/links,/odoo/local-src,/odoo/src/odoo/addons,/odoo/src/addons,/odoo/external-src/odoo-usability,/odoo/external-src/hr,/odoo/external-src/reporting-engine,/odoo/external-src/operating-unit,/odoo/external-src/l10n-france,/odoo/external-src/knowledge,/odoo/external-src/swr_datepicker,/odoo/external-src/account-budgeting,/odoo/external-src/account-financial-tools,/odoo/external-src/account-closing,/odoo/external-src/account-invoice-reporting,/odoo/external-src/account-invoicing,/odoo/external-src/account-payment,/odoo/external-src/account-reconcile,/odoo/external-src/connector-telephony,/odoo/external-src/edi,/odoo/external-src/maintainer-tools,/odoo/external-src/partner-contact,/odoo/external-src/project,/odoo/external-src/sale-workflow,/odoo/external-src/server-ux,/odoo/external-src/account-analytic,/odoo/external-src/connector,/odoo/external-src/product-attribute,/odoo/external-src/product-variant,/odoo/external-src/connector-search-engine,/odoo/external-src/odoo-shopinvader,/odoo/external-src/queue,/odoo/external-src/web,/odoo/external-src/rest-framework
     links:
       - db
       - pgadmin
-      - adminer
     networks:
       default:
         aliases:
-          - docky-template.dy
+          - ebii.dy
     volumes:
       - ./odoo:/odoo
+      - ./data/filestore:/data/odoo/filestore
+      - ./data/sessions:/data/odoo/sessions
   pgadmin:
     environment:
-      - VIRTUAL_HOST=pgadmin.docky-template.dy
+      - VIRTUAL_HOST=pgadmin.ebii.dy
       - VIRTUAL_PORT=5050
     image: fenglc/pgadmin4
     links:
@@ -55,5 +46,5 @@ services:
     networks:
       default:
         aliases:
-          - pgadmin.docky-template.dy
+          - pgadmin.ebii.dy
 version: '3'
