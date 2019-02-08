@@ -129,4 +129,34 @@ rest-framework:
     modules: []
     src: https://github.com/OCA/rest-framework.git 10.0
 
+account-fiscal-rule:
+    modules: []
+    src: https://github.com/OCA/account-fiscal-rule.git 10.0
 
+payment-gateway:
+    modules: []
+    src: https://github.com/akretion/payment-gateway.git 10.0
+
+storage:
+    modules: []
+    src: https://github.com/akretion/storage.git 10.0
+
+ak-odoo-incubator:
+    modules: []
+    src: https://github.com/akretion/ak-odoo-incubator 10.0
+
+e-commerce:
+    modules: []
+    src: https://github.com/OCA/e-commerce 10.0
+
+bank-payment:
+    modules: []
+    src: https://github.com/OCA/bank-payment 10.0
+
+crm:
+    modules: []
+    src: https://github.com/OCA/crm 10.0
+
+delivery-carrier:
+    modules: []
+    src: https://github.com/OCA/delivery-carrier 10.0

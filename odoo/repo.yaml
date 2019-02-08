@@ -18,6 +18,11 @@
   merges: [origin 10.0]
   remotes: {origin: 'https://github.com/OCA/account-financial-tools.git'}
   target: origin 10.0
+./external-src/account-fiscal-rule:
+  default: {depth: 20}
+  merges: [origin 10.0]
+  remotes: {origin: 'https://github.com/OCA/account-fiscal-rule.git'}
+  target: origin 10.0
 ./external-src/account-invoice-reporting:
   default: {depth: 20}
   merges: [origin 10.0]
@@ -38,6 +43,16 @@
   merges: [origin 10.0]
   remotes: {origin: 'https://github.com/OCA/account-reconcile.git'}
   target: origin 10.0
+./external-src/ak-odoo-incubator:
+  default: {depth: 20}
+  merges: [origin 10.0]
+  remotes: {origin: 'https://github.com/akretion/ak-odoo-incubator'}
+  target: origin 10.0
+./external-src/bank-payment:
+  default: {depth: 20}
+  merges: [origin 10.0]
+  remotes: {origin: 'https://github.com/OCA/bank-payment'}
+  target: origin 10.0
 ./external-src/connector:
   default: {depth: 20}
   merges: [origin 10.0]
@@ -52,6 +67,21 @@
   default: {depth: 20}
   merges: [origin 10.0]
   remotes: {origin: 'https://github.com/OCA/connector-telephony.git'}
+  target: origin 10.0
+./external-src/crm:
+  default: {depth: 20}
+  merges: [origin 10.0]
+  remotes: {origin: 'https://github.com/OCA/crm'}
+  target: origin 10.0
+./external-src/delivery-carrier:
+  default: {depth: 20}
+  merges: [origin 10.0]
+  remotes: {origin: 'https://github.com/OCA/delivery-carrier'}
+  target: origin 10.0
+./external-src/e-commerce:
+  default: {depth: 20}
+  merges: [origin 10.0]
+  remotes: {origin: 'https://github.com/OCA/e-commerce'}
   target: origin 10.0
 ./external-src/edi:
   default: {depth: 20}
@@ -98,6 +128,11 @@
   merges: [origin 10.0]
   remotes: {origin: 'https://github.com/OCA/partner-contact.git'}
   target: origin 10.0
+./external-src/payment-gateway:
+  default: {depth: 20}
+  merges: [origin 10.0]
+  remotes: {origin: 'https://github.com/akretion/payment-gateway.git'}
+  target: origin 10.0
 ./external-src/product-attribute:
   default: {depth: 20}
   merges: [origin 10.0]
@@ -142,6 +177,11 @@
   default: {depth: 20}
   merges: [origin 10.0]
   remotes: {origin: 'https://github.com/OCA/server-ux.git'}
+  target: origin 10.0
+./external-src/storage:
+  default: {depth: 20}
+  merges: [origin 10.0]
+  remotes: {origin: 'https://github.com/akretion/storage.git'}
   target: origin 10.0
 ./external-src/swr_datepicker:
   default: {depth: 20}

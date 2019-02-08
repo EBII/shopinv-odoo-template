@@ -1,0 +1,32 @@
+git+https://github.com/akretion/locomotivecms-python-client@master#egg=locomotivecms
+git+https://github.com/cheah/adyen-cse-python@master#egg=adyen-cse-python
+stripe==2.0.3
+vobject==0.9.3
+Werkzeug==0.11.11
+wsgiref==0.1.2
+XlsxWriter==0.9.3
+xlwt==1.1.2
+xlrd==1.0.0
+pydot == 1.0.28
+python-dateutil == 2.4.0
+pyusb== 1.0.0
+pillow== 3.4.2
+pathlib==1.0.1
+zc.buildout== 2.8.0
+python-stdnum== 1.4
+greenlet== 0.4.10
+unicodecsv== 0.14.1
+qrcode== 5.3
+py3o.template== 0.9.12
+py3o.formats== 0.3
+slugify
+cerberus
+algoliasearch
+paypalrestsdk
+unidecode
+pysimplesoap
+requests_mock
+pyquerystring
+parse-accept-language
+python-magic
+validators
