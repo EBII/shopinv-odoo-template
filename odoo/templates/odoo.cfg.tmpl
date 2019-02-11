@@ -22,6 +22,8 @@ workers = {{ default .Env.WORKERS "4" }}
 logfile = {{ default .Env.LOGFILE "None" }}
 log_db = {{ default .Env.LOG_DB "False" }}
 logrotate = True
+keychain_key_dev = rQsqlmn4NhH2riJZIkviFU8woLK1via4g80QKi1I8Ww=
+keychain_key_pro = _hrJXQ5mE2-9x5htrwUfOhX0vILuSVfw9zAI6cu_2aY=
 syslog = {{ default .Env.SYSLOG "False" }}
 running_env = {{ default .Env.RUNNING_ENV "dev" }}
 without_demo = {{ default .Env.WITHOUT_DEMO "True" }}
