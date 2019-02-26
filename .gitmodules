@@ -1,0 +1,3 @@
+[submodule "odoo/local-src/shopinvader_custom_module"]
+	path = odoo/local-src/shopinvader_custom_module
+	url = git@gitlab.ebii.fr:ebii/shopinvader_custom_module.git
